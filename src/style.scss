@@ -1,0 +1,140 @@
+h1{
+    text-align: center;
+    padding:30px;
+}
+
+.flex-container{
+    display: flex;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#mapContainer{
+    height: 350px;
+}
+
+home-page #mapid {
+    height: 450px;
+}
+
+#mapid {
+    height: 850px;
+    width: 100%;
+}
+
+.scrollTable {
+    overflow-x: scroll;
+    height: 100%;
+}
+
+.scrollTable > .body {
+    width: -webkit-fit-content;
+    overflow-y: scroll;
+}
+.scrolltable {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+.scrolltable > .body {
+    flex: 1;
+    -webkit-flex: 1;
+}
+
+#listContainer{
+    width: 75%;
+    height: 700px;
+    padding: 30px;
+}
+
+home-page #eventList{
+    padding: 30px;
+    height: 600px;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+
+#eventList{
+    padding: 30px;
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+}
+#filterContainer{
+    width: 25%;
+    height: 350px;
+
+}
+#eventFilter{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+#eventFilterField{
+    padding: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    overflow-y: scroll;
+}
+
+input[type=checkbox]{
+    transform: scale(1.5);
+}
+
+.checkboxtext{
+    font-size: 110%;
+    display: inline;
+    padding: 20px;
+}
+table{
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+th, td, tr {
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-right:40px;
+    padding-left:40px;
+    text-align: center;
+    border-radius: 2px;
+    display: inline-table;
+    table-layout: fixed;
+}
+
+#contents.tbody{
+    height: 300px;
+    overflow-y:auto;
+    display: block;
+}
+
+
+
+#contents{
+    width: 100%;
+    height: 650px;
+    table-layout:fixed;
+    overflow-y: hidden;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+
+}
+
+
+.header{
+    padding: 25px;
+    background-color: #717D8C;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2}
+
+#checkbox{
+    padding-top:15px;
+    padding-bottom:15px;
+}

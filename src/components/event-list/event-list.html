@@ -1,0 +1,27 @@
+<input type='search' ng-model='$ctrl.searchText' ng-change = '$ctrl.bindedSearch($ctrl.searchText)'>
+<!--{{$ctrl.resultList}}-->
+<table class = 'header'>
+    <tr>
+        <th width='10%'>Time</th>
+        <th width='15%'>Events</th>
+        <th width='10%'>Users</th>
+        <th width='20%'>Productions</th>
+        <th width='20%'>Emails</th>
+        <th width='15%'>Locations</th>
+    </tr>
+</table>
+<div class = 'scrollTable'>
+
+<div class = 'body'>
+<table id = 'contents'>
+    <tr ng-repeat="x in $ctrl.displayList |filter: $ctrl.bindedCheckEvents">
+        <td width='10%'><time>{{x.time | date: 'hh:mm:ss'}}</time></td>
+        <td width='15%'>{{x.eventName}}</td>
+        <td width='10%'>{{x.userName}}</td>
+        <td width='20%'>{{x.production}}</td>
+        <td width='20%'>{{x.Email}}</td>
+        <td width='15%'>{{x.Location}}</td>
+    </tr>
+</table>
+</div>
+</div>

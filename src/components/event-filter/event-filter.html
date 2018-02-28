@@ -1,0 +1,8 @@
+<h2 style='text-align: center;'>Event Filters</h2>
+<div id = 'eventFilterField' >
+
+<form ng-repeat='(key, value) in $ctrl.filterDict'>
+    <input id = 'checkbox' type = 'checkbox' ng-model = '$ctrl.filterDict[key]'><span class=checkboxtext>{{key}}</span></input><br>
+</form>
+</div>
+<div id="mapid"></div>
